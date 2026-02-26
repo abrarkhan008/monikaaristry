@@ -1,0 +1,127 @@
+export default function Contact() {
+  return (
+    <div className="luxury-bg min-h-screen pt-28 pb-20">
+      <div className="bokeh-overlay" />
+
+      {/* Header */}
+      <div className="text-center mb-16 px-4 relative z-10">
+        <p className="font-script text-6xl mb-2" style={{ color: "#a0496a" }}>
+          Contact Me
+        </p>
+        <div className="ornament">— ✦ —</div>
+        <h1
+          className="font-display text-2xl md:text-3xl font-light"
+          style={{ color: "#4a3728" }}
+        >
+          Let's Create Something Beautiful Together
+        </h1>
+      </div>
+
+      <div className="max-w-4xl mx-auto px-4 relative z-10">
+        {/* Contact Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          {[
+            {
+              icon: "📞",
+              title: "Call or WhatsApp",
+              value: "+91 7530051709",
+              href: "tel:+917530051709",
+              cta: "Call Now",
+            },
+            {
+              icon: "✉️",
+              title: "Email",
+              value: "Mon.makeoverartistry@gmail.com",
+              href: "mailto:Mon.makeoverartistry@gmail.com",
+              cta: "Send Email",
+            },
+            {
+              icon: "📸",
+              title: "Instagram",
+              value: "@monikaaristry",
+              href: "https://www.instagram.com/monikaaristry?igsh=MXg0M2dqYzAxbXdqOQ==",
+              cta: "Follow Me",
+              external: true,
+            },
+            {
+              icon: "📍",
+              title: "Location",
+              value: "Bangalore & Coimbatore",
+              href: null,
+              cta: null,
+            },
+          ].map((card, i) => (
+            <div
+              key={i}
+              className="card-hover rounded-2xl p-8 text-center"
+              style={{
+                background: "white",
+                border: "1px solid rgba(200,149,108,0.2)",
+                boxShadow: "0 4px 20px rgba(160,73,106,0.08)",
+              }}
+            >
+              <div
+                className="w-16 h-16 rounded-full flex items-center justify-center text-3xl mx-auto mb-4"
+                style={{ background: "rgba(160,73,106,0.1)" }}
+              >
+                {card.icon}
+              </div>
+              <h3
+                className="font-display text-xs tracking-widest uppercase mb-2"
+                style={{ color: "#c8956c" }}
+              >
+                {card.title}
+              </h3>
+              <p
+                className="font-body text-base mb-4"
+                style={{ color: "#4a3728" }}
+              >
+                {card.value}
+              </p>
+              {card.cta && card.href && (
+                <a
+                  href={card.href}
+                  target={card.external ? "_blank" : undefined}
+                  rel={card.external ? "noopener noreferrer" : undefined}
+                  className="btn-primary text-sm py-2 px-6 inline-block"
+                >
+                  {card.cta}
+                </a>
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* Big WhatsApp CTA */}
+        <div
+          className="rounded-3xl p-12 text-center relative overflow-hidden"
+          style={{
+            background:
+              "linear-gradient(135deg, #1a4a2e 0%, #0f3d24 50%, #1a5c38 100%)",
+          }}
+        >
+          <h2 className="font-display text-3xl font-medium text-white mb-3">
+            Book Your Appointment Instantly
+          </h2>
+          <p
+            className="font-body text-lg mb-8"
+            style={{ color: "rgba(255,255,255,0.8)" }}
+          >
+            Chat directly with Monika on WhatsApp for fast, personalized booking
+          </p>
+          <a
+            href="https://wa.me/917530051709?text=Hi%20Monika!%20I%27d%20like%20to%20book%20a%20makeup%20appointment."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-whatsapp inline-flex text-lg px-10 py-4"
+          >
+            <svg viewBox="0 0 24 24" fill="white" width="22" height="22">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+            </svg>
+            Open WhatsApp → Book Now
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
