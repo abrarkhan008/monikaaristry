@@ -4,11 +4,10 @@ import Footer from "./components/Footer";
 import WhatsAppFloat from "./components/WhatsAppFloat";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
-import BridalMakeup from "./pages/BridalMakeup.jsx";
-import GlamourLooks from "./pages/GlamourLooks.jsx";
-import PhotoshootMakeup from "./pages/PhotoshootMakeup.jsx";
+import BridalMakeup from "./pages/Bridalmakeup.jsx";
+import GlamourLooks from "./pages/Glamourlooks.jsx";
+import PhotoshootMakeup from "./pages/Photoshootmakeup.jsx";
 import Contact from "./pages/Contact.jsx";
-
 function App() {
   return (
     <div className="min-h-screen">
