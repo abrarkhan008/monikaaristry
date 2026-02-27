@@ -2,12 +2,12 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import WhatsAppFloat from "./components/WhatsAppFloat";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import BridalMakeup from "./pages/BridalMakeup";
-import GlamourLooks from "./pages/GlamourLooks";
-import PhotoshootMakeup from "./pages/PhotoshootMakeup";
-import Contact from "./pages/Contact";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import BridalMakeup from "./pages/BridalMakeup.jsx";
+import GlamourLooks from "./pages/GlamourLooks.jsx";
+import PhotoshootMakeup from "./pages/PhotoshootMakeup.jsx";
+import Contact from "./pages/Contact.jsx";
 
 function App() {
   return (
