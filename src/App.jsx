@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import GalleryPage from "./components/GalleryPage";
-import WhatsAppFloat from "./components/WhatsAppFloat";
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
+import GalleryPage from "./components/GalleryPage.jsx";
+import WhatsAppFloat from "./components/WhatsAppFloat.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import BridalMakeup from "./pages/Bridalmakeup.jsx";
