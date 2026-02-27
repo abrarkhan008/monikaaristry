@@ -35,100 +35,60 @@ export default function Home() {
   return (
     <div>
       {/* ===== HERO ===== */}
+      {/* ===== HERO ===== */}
       <section
-        className="relative min-h-screen flex items-center justify-center overflow-hidden"
+        className="min-h-screen flex items-center justify-center text-center px-6"
         style={{
-          background: `
-            radial-gradient(ellipse at 30% 60%, rgba(160,73,106,0.3) 0%, transparent 50%),
-            radial-gradient(ellipse at 75% 30%, rgba(200,149,108,0.25) 0%, transparent 50%),
-            linear-gradient(135deg, #2e1a12 0%, #9b6464 40%, #8a4a3a 70%, #c8956c 100%)
-          `,
+          background:
+            "linear-gradient(135deg, #3b2218 0%, #7a4a3a 60%, #8a4a3a 100%)",
         }}
       >
-        {/* Bokeh circles */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {[...Array(8)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute rounded-full opacity-5"
-              style={{
-                width: `${80 + i * 40}px`,
-                height: `${80 + i * 40}px`,
-                background: i % 2 === 0 ? "#b17a5f" : "#834e44",
-                top: `${10 + ((i * 13) % 80)}%`,
-                left: `${5 + ((i * 17) % 90)}%`,
-                animation: `float${(i % 2) + 1} ${6 + i}s ease-in-out infinite`,
-                animationDelay: `${i * 0.5}s`,
-              }}
-            />
-          ))}
-        </div>
-
-        {/* Gold shimmer overlay */}
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E")`,
-          }}
-        />
-
-        {/* Content */}
-        <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
-          <h2
-            className="font-display text-lg md:text-xl tracking-[0.3em] uppercase mb-6"
-            style={{ color: "#b17a5f" }}
+        <div className="max-w-2xl mx-auto text-white">
+          {/* Top small heading */}
+          <p
+            className="uppercase tracking-[0.4em] text-sm mb-6"
+            style={{ color: "#d6b08c" }}
           >
             Luxury Bridal Makeup
-          </h2>
+          </p>
 
+          {/* Main Name */}
           <h1
-            className="font-script text-5xl md:text-8xl mb-6"
-            style={{ color: "white", lineHeight: 1.2 }}
+            className="font-script text-6xl md:text-8xl mb-6"
+            style={{ lineHeight: 1.1 }}
           >
-            Monika Aristry
+            Monika <br /> Aristry
           </h1>
 
-          <p
-            className="font-display text-sm tracking-[0.4em] uppercase mb-10"
-            style={{ color: "rgba(255,255,255,0.8)" }}
-          >
+          {/* Subtitle */}
+          <p className="uppercase tracking-[0.4em] text-sm mb-2 text-white/80">
             Professional Makeup Artist
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <a
-              href="https://wa.me/917530051709"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary text-lg px-10 py-4"
-            >
-              Book an Appointment
-            </a>
+          <p className="mb-8 text-white/80">Bangalore & Coimbatore</p>
 
-            <Link
-              to="/about"
-              className="font-display text-sm tracking-widest uppercase py-3 px-8 rounded-full border transition-all duration-300 hover:bg-white/10"
-              style={{ color: "white", borderColor: "rgba(200,149,108,0.5)" }}
-            >
-              Learn About Me
-            </Link>
-          </div>
-        </div>
-        {/* Scroll indicator */}
-        <div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-          style={{ color: "rgba(200,149,108,0.7)" }}
-        >
-          <span className="font-body text-xs tracking-widest uppercase">
-            Scroll
-          </span>
-          <div
-            className="w-px h-12 animate-pulse"
+          {/* Tagline */}
+          <p
+            className="italic text-lg md:text-xl mb-12"
+            style={{ color: "#f2d5b3" }}
+          >
+            Timeless. Refined. Bespoke <br />
+            Bridal Artistry.
+          </p>
+
+          {/* Button */}
+          <a
+            href="https://wa.me/917530051709"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-10 py-4 rounded-full border text-sm tracking-widest uppercase transition-all duration-300 hover:bg-white hover:text-[#3b2218]"
             style={{
-              background:
-                "linear-gradient(to bottom, rgba(200,149,108,0.7), transparent)",
+              borderColor: "#d6b08c",
+              color: "#d6b08c",
             }}
-          />
+          >
+            Book Your Consultation
+          </a>
         </div>
       </section>
 
