@@ -2,6 +2,12 @@ import GalleryPage from "./GalleryPage";
 
 const bridalCards = [
   {
+    title: "Bridal Hairstyles",
+    description: "View more bridal hairstyles. click here",
+    image: "/hairstyle/1.png",
+    to: "/bridal/hairstyles",
+  },
+  {
     title: "Classic Bridal Look",
     description:
       "Timeless elegance with soft glam eyes and a nude lip. Perfect for the bride who loves a natural, refined finish.",
@@ -31,98 +37,97 @@ const bridalCards = [
       "Long-lasting matte bridal look with perfect coverage. Stays flawless from ceremony to reception.",
     image: "/bride/5.png",
   },
-  {
-    title: "Pastel Bridal Look",
-    description:
-      "Dreamy pastels with peach tones and soft shimmers. A romantic, feminine look for the modern bride.",
-    image: "/bride/6.png",
-  },
-  {
-    title: "Gold & Bronze Bride",
-    description:
-      "Rich gold eye makeup with bronzed skin and a bold lip. Luxurious and camera-perfect.",
-    image: "/bride/7.png",
-  },
-  {
-    title: "Minimalist Bride",
-    description:
-      "Less is more — clean skin, subtle definition, and a soft pink lip. Elegance in its purest form.",
-    image: "/bride/8.png",
-  },
-  {
-    title: "Vintage Glam Bride",
-    description:
-      "Old Hollywood glamour with defined brows, cat-eye liner, and a classic red lip.",
-    image: "/bride/9.png",
-  },
-  {
-    title: "Coral & Pink Bride",
-    description:
-      "Bright coral and pink tones with dewy skin. Fresh and vibrant for daytime celebrations.",
-    image: "/bride/10.png",
-  },
+  // {
+  //   title: "Pastel Bridal Look",
+  //   description:
+  //     "Dreamy pastels with peach tones and soft shimmers. A romantic, feminine look for the modern bride.",
+  //   image: "/bride/6.png",
+  // },
+  // {
+  //   title: "Gold & Bronze Bride",
+  //   description:
+  //     "Rich gold eye makeup with bronzed skin and a bold lip. Luxurious and camera-perfect.",
+  //   image: "/bride/7.png",
+  // },
+  // {
+  //   title: "Minimalist Bride",
+  //   description:
+  //     "Less is more — clean skin, subtle definition, and a soft pink lip. Elegance in its purest form.",
+  //   image: "/bride/8.png",
+  // },
+  // {
+  //   title: "Vintage Glam Bride",
+  //   description:
+  //     "Old Hollywood glamour with defined brows, cat-eye liner, and a classic red lip.",
+  //   image: "/bride/9.png",
+  // },
+  // {
+  //   title: "Coral & Pink Bride",
+  //   description:
+  //     "Bright coral and pink tones with dewy skin. Fresh and vibrant for daytime celebrations.",
+  //   image: "/bride/10.png",
+  // },
 ];
-  // {
-  //   title: "Heavy Bridal Makeup",
-  //   description:
-  //     "Full glam with dramatic lashes, contouring, and intricate eye design. For the bride who loves bold beauty.",
-  //   imageHint: "Heavy Glam Bride",
-  // },
-  // {
-  //   title: "Reception Look",
-  //   description:
-  //     "Glamorous reception makeup that transitions from day to night with an impactful finish.",
-  //   imageHint: "Reception Look",
-  // },
-  // {
-  //   title: "Mehendi Function",
-  //   description:
-  //     "Light, breezy makeup with floral tones for the mehendi ceremony. Beautiful and comfortable.",
-  //   imageHint: "Mehendi Makeup",
-  // },
-  // {
-  //   title: "Sangeet Night Look",
-  //   description:
-  //     "Fun, vibrant makeup with bold colors and shimmer for the sangeet dance night.",
-  //   imageHint: "Sangeet Night Look",
-  // },
-  // {
-  //   title: "Christian Bride",
-  //   description:
-  //     "Soft, classic bridal look with a fresh, natural finish perfect for church ceremonies.",
-  //   imageHint: "Christian Bride",
-  // },
-  // {
-  //   title: "Muslim Bride",
-  //   description:
-  //     "Elegant and modest bridal look with rich jewel tones and flawless skin.",
-  //   imageHint: "Muslim Bride",
-  // },
-  // {
-  //   title: "Airbrush Bridal",
-  //   description:
-  //     "Ultra-smooth airbrush foundation finish that photographs like no other. Zero texture, pure perfection.",
-  //   imageHint: "Airbrush Bridal",
-  // },
-  // {
-  //   title: "Natural Bride",
-  //   description:
-  //     "Enhancing your natural beauty with minimal products. You, but absolutely perfected.",
-  //   imageHint: "Natural Bride",
-  // },
-  // {
-  //   title: "Rose Gold Bride",
-  //   description:
-  //     "Trending rose gold palette with warm tones, shimmery lids, and a rosy lip.",
-  //   imageHint: "Rose Gold Bride",
-  // },
-  // {
-  //   title: "Full Day Bridal Trial",
-  //   description:
-  //     "Complete bridal trial session showcasing endurance — from morning to midnight, perfectly intact.",
-  //   imageHint: "Bridal Trial Look",
-  // },
-
+// {
+//   title: "Heavy Bridal Makeup",
+//   description:
+//     "Full glam with dramatic lashes, contouring, and intricate eye design. For the bride who loves bold beauty.",
+//   imageHint: "Heavy Glam Bride",
+// },
+// {
+//   title: "Reception Look",
+//   description:
+//     "Glamorous reception makeup that transitions from day to night with an impactful finish.",
+//   imageHint: "Reception Look",
+// },
+// {
+//   title: "Mehendi Function",
+//   description:
+//     "Light, breezy makeup with floral tones for the mehendi ceremony. Beautiful and comfortable.",
+//   imageHint: "Mehendi Makeup",
+// },
+// {
+//   title: "Sangeet Night Look",
+//   description:
+//     "Fun, vibrant makeup with bold colors and shimmer for the sangeet dance night.",
+//   imageHint: "Sangeet Night Look",
+// },
+// {
+//   title: "Christian Bride",
+//   description:
+//     "Soft, classic bridal look with a fresh, natural finish perfect for church ceremonies.",
+//   imageHint: "Christian Bride",
+// },
+// {
+//   title: "Muslim Bride",
+//   description:
+//     "Elegant and modest bridal look with rich jewel tones and flawless skin.",
+//   imageHint: "Muslim Bride",
+// },
+// {
+//   title: "Airbrush Bridal",
+//   description:
+//     "Ultra-smooth airbrush foundation finish that photographs like no other. Zero texture, pure perfection.",
+//   imageHint: "Airbrush Bridal",
+// },
+// {
+//   title: "Natural Bride",
+//   description:
+//     "Enhancing your natural beauty with minimal products. You, but absolutely perfected.",
+//   imageHint: "Natural Bride",
+// },
+// {
+//   title: "Rose Gold Bride",
+//   description:
+//     "Trending rose gold palette with warm tones, shimmery lids, and a rosy lip.",
+//   imageHint: "Rose Gold Bride",
+// },
+// {
+//   title: "Full Day Bridal Trial",
+//   description:
+//     "Complete bridal trial session showcasing endurance — from morning to midnight, perfectly intact.",
+//   imageHint: "Bridal Trial Look",
+// },
 
 export default function BridalMakeup() {
   return (

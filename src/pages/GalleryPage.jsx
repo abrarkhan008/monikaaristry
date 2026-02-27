@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 // Gallery card with placeholder image and custom info
 function GalleryCard({
@@ -8,12 +9,14 @@ function GalleryCard({
   imageHint,
   image,
   accentColor,
+  to,
 }) {
   const [imgError, setImgError] = useState(false);
 
   return (
-    <div
-      className="card-hover rounded-2xl overflow-hidden"
+    <Link
+      to={to || "#"}
+      className="card-hover rounded-2xl overflow-hidden block"
       style={{
         background: "white",
         boxShadow: "0 4px 20px rgba(160,73,106,0.1)",
@@ -84,7 +87,7 @@ function GalleryCard({
           </span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
@@ -149,6 +152,7 @@ export default function GalleryPage({
               imageHint={card.imageHint}
               image={card.image}
               accentColor={accentColor}
+              to={card.to}
             />
           ))}
         </div>
