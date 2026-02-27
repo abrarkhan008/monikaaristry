@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import GalleryPage from "./components/GalleryPage";
 import WhatsAppFloat from "./components/WhatsAppFloat";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
