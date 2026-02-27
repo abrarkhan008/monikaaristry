@@ -3,13 +3,13 @@ import GalleryPage from "./GalleryPage";
 export default function BridalHairstyles() {
   const hairstyleCards = [
     {
-      title: "Classic Bridal Bun",
+      title: "Bridal Braid",
       description:
         "Elegant traditional bun styled perfectly for saree and lehenga looks.",
       image: "/hairstyle/1.png",
     },
     {
-      title: "Soft Curls Bridal",
+      title: "Heart- in braid",
       description:
         "Romantic soft curls with volume, perfect for modern bridal styling.",
       image: "/hairstyle/2.png",
@@ -21,13 +21,13 @@ export default function BridalHairstyles() {
       image: "/hairstyle/3.png",
     },
     {
-      title: "Low Textured Bun",
+      title: "Half-up Bridal waves",
       description:
         "Chic and minimal low bun hairstyle for elegant evening weddings.",
       image: "/hairstyle/4.png",
     },
     {
-      title: "Half-Up Bridal Waves",
+      title: "Messy braid",
       description:
         "Soft half-up waves giving volume and grace for reception events.",
       image: "/hairstyle/5.png",
