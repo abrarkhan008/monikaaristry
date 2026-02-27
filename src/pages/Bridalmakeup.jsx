@@ -1,4 +1,4 @@
-import GalleryPage from "../components/GalleryPage";
+import GalleryPage from "./GalleryPage";
 
 const bridalCards = [
   {
