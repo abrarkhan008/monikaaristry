@@ -35,7 +35,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" className="flex flex-col items-start">
           <span
-            className="font-script text-3xl leading-tight"
+            className="font-display text-2xl font-semibold tracking-wide leading-tight"
             style={{ color: "#a0496a" }}
           >
             The Monika Aristry

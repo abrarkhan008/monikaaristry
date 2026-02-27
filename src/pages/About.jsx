@@ -5,7 +5,7 @@ export default function About() {
 
       {/* Header */}
       <div className="text-center mb-16 px-4 relative z-10">
-        <p className="font-script text-6xl mb-2" style={{ color: "#a0496a" }}>
+        <p className="font-display text-6xl mb-2" style={{ color: "#a0496a" }}>
           About Me
         </p>
         <div className="ornament">— ✦ —</div>
@@ -56,7 +56,9 @@ export default function About() {
                 background: "linear-gradient(135deg, #a0496a, #c4788a)",
               }}
             >
-              <span className="font-script text-3xl leading-tight">5+</span>
+              <span className="font-display text-2xl font-semibold tracking-wide leading-tight">
+                5+
+              </span>
               <span className="font-body text-xs tracking-wider">Years</span>
             </div>
           </div>
@@ -194,7 +196,7 @@ export default function About() {
                 </div>
                 <p
                   className="font-display text-xs tracking-widest uppercase mb-2"
-                  style={{ color: "#c8956c" }}
+                  style={{ color: "#b17a5f" }}
                 >
                   {c.label}
                 </p>

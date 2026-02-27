@@ -5,7 +5,7 @@ export default function Contact() {
 
       {/* Header */}
       <div className="text-center mb-16 px-4 relative z-10">
-        <p className="font-script text-6xl mb-2" style={{ color: "#a0496a" }}>
+        <p className="font-display text-6xl mb-2" style={{ color: "#a0496a" }}>
           Contact Me
         </p>
         <div className="ornament">— ✦ —</div>
@@ -68,7 +68,7 @@ export default function Contact() {
               </div>
               <h3
                 className="font-display text-xs tracking-widest uppercase mb-2"
-                style={{ color: "#c8956c" }}
+                style={{ color: "#b17a5f" }}
               >
                 {card.title}
               </h3>

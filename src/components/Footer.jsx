@@ -14,8 +14,8 @@ export default function Footer() {
           {/* Brand */}
           <div className="text-center md:text-left">
             <h3
-              className="font-script text-4xl mb-3"
-              style={{ color: "#c8956c" }}
+              className="font-display text-4xl mb-3"
+              style={{ color: "#b17a5f" }}
             >
               The Monika Aristry
             </h3>
@@ -38,7 +38,7 @@ export default function Footer() {
           <div className="text-center">
             <h4
               className="font-display text-sm tracking-widest uppercase mb-6"
-              style={{ color: "#c8956c" }}
+              style={{ color: "#b17a5f" }}
             >
               Quick Links
             </h4>
@@ -67,7 +67,7 @@ export default function Footer() {
           <div className="text-center md:text-right">
             <h4
               className="font-display text-sm tracking-widest uppercase mb-6"
-              style={{ color: "#c8956c" }}
+              style={{ color: "#b17a5f" }}
             >
               Get In Touch
             </h4>

@@ -1,7 +1,14 @@
 import { useState } from "react";
 
 // Gallery card with placeholder image and custom info
-function GalleryCard({ index, title, description, imageHint, accentColor }) {
+function GalleryCard({
+  index,
+  title,
+  description,
+  imageHint,
+  image,
+  accentColor,
+}) {
   const [imgError, setImgError] = useState(false);
 
   return (
@@ -15,46 +22,42 @@ function GalleryCard({ index, title, description, imageHint, accentColor }) {
       {/* Image placeholder with gradient */}
       <div
         className="relative overflow-hidden"
-        style={{
-          height: "280px",
-          background: `linear-gradient(135deg, ${accentColor}22 0%, ${accentColor}44 100%)`,
-        }}
+        style={{ height: "400px", background: "#f5f0eb" }}
       >
-        <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
-          <div
-            className="w-16 h-16 rounded-full flex items-center justify-center mb-3 text-2xl"
-            style={{ background: `${accentColor}33` }}
-          >
-            💄
-          </div>
-          <p
-            className="font-display text-center text-sm font-medium"
-            style={{ color: accentColor }}
-          >
-            {imageHint}
-          </p>
-          <p
-            className="font-body text-xs text-center mt-1"
-            style={{ color: "#9e7d6e" }}
-          >
-            Add your photo here
-          </p>
-        </div>
-        {/* Bokeh dots */}
-        <div
-          className="absolute top-4 right-4 w-8 h-8 rounded-full opacity-20"
-          style={{ background: accentColor }}
-        />
-        <div
-          className="absolute bottom-8 left-4 w-5 h-5 rounded-full opacity-15"
-          style={{ background: accentColor }}
-        />
-        <div
-          className="absolute top-12 left-8 w-3 h-3 rounded-full opacity-10"
-          style={{ background: accentColor }}
-        />
-      </div>
+        {!imgError && (
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full object-cover"
+            onError={() => setImgError(true)}
+            onClick={() => window.open(image, "_blank")} // <-- add click here
+            style={{ cursor: "pointer" }}
+          />
+        )}
 
+        {imgError && (
+          <div className="absolute inset-0 flex flex-col items-center justify-center">
+            <div
+              className="w-16 h-16 rounded-full flex items-center justify-center mb-3 text-2xl"
+              style={{ background: `${accentColor}33` }}
+            >
+              💄
+            </div>
+            <p
+              className="font-display text-center text-sm font-medium"
+              style={{ color: accentColor }}
+            >
+              {imageHint}
+            </p>
+            <p
+              className="font-body text-xs text-center mt-1"
+              style={{ color: "#9e7d6e" }}
+            >
+              Add your photo here
+            </p>
+          </div>
+        )}
+      </div>
       {/* Info */}
       <div className="p-5">
         <h3
@@ -98,7 +101,10 @@ export default function GalleryPage({
 
       {/* Page Header */}
       <div className="text-center mb-16 px-4 relative z-10">
-        <p className="font-script text-5xl mb-2" style={{ color: accentColor }}>
+        <p
+          className="font-display text-5xl mb-2"
+          style={{ color: accentColor }}
+        >
           {title}
         </p>
         <div className="ornament">— ✦ —</div>
@@ -141,6 +147,7 @@ export default function GalleryPage({
               title={card.title}
               description={card.description}
               imageHint={card.imageHint}
+              image={card.image}
               accentColor={accentColor}
             />
           ))}
@@ -155,7 +162,10 @@ export default function GalleryPage({
           border: "1px solid rgba(200,149,108,0.3)",
         }}
       >
-        <p className="font-script text-3xl mb-3" style={{ color: accentColor }}>
+        <p
+          className="font-display text-2xl font-semibold tracking-wide mb-3"
+          style={{ color: accentColor }}
+        >
           How to Add Your Photos
         </p>
         <p
